@@ -15,7 +15,20 @@
 - cropping images
 
 
-#modeeling
+#modelling
 -Network Architecture
 
 ![image](https://user-images.githubusercontent.com/41071502/126832515-0a80c569-a1f3-44d1-9728-43e31ebfabce.png)
+
+
+-model
+
+-callbacks
+
+
+# Results
+
+
+# Future changes
+
+# References
