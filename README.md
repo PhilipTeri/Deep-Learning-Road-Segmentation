@@ -40,8 +40,8 @@ Custom Callback that prints 10 images with the accuracy
 
 ## References
 
-Biomedical Example
+Biomedical Example - 
 https://www.kaggle.com/vbookshelf/simple-cell-segmentation-with-keras-and-u-net
 
-U-Net architecture Example
+U-Net architecture Example -
 https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277
