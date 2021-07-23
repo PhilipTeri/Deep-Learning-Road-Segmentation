@@ -16,15 +16,19 @@
 
 
 ## modelling
--Network Architecture
+
+### Network Architecture
 
 ![image](https://user-images.githubusercontent.com/41071502/126834385-1d22b434-2283-452e-9c66-88925a0d69fc.png)
 
+### Model
 
+### Callbacks
+Early stopping
 
--model
+Check point
 
--callbacks
+Custom Callback that prints 10 images with the accuracy
 
 
 ## Results
