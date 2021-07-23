@@ -31,5 +31,7 @@
 
 
 ## Future changes
+- data augmentation
+- bigger batch size, more ram
 
 ## References
