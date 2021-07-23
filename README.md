@@ -9,7 +9,7 @@
 -link image source
 - talk about how I can make my own data
 
-#preprocessing
+# pre processing
 
 -original images
 - cropping images
