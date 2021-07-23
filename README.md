@@ -32,6 +32,7 @@ Custom Callback that prints 10 images with the accuracy
 
 
 ## Results
+![image](https://user-images.githubusercontent.com/41071502/126838989-d9462783-8b7b-4380-9824-2f66f8cc3c7f.png)
 
 
 ## Future changes
