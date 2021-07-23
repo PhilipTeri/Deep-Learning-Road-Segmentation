@@ -18,7 +18,8 @@
 ## modelling
 -Network Architecture
 
-![image](https://user-images.githubusercontent.com/41071502/126832515-0a80c569-a1f3-44d1-9728-43e31ebfabce.png)
+![image](https://user-images.githubusercontent.com/41071502/126834385-1d22b434-2283-452e-9c66-88925a0d69fc.png)
+
 
 
 -model
