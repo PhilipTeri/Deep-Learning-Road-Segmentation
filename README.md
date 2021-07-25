@@ -1,9 +1,8 @@
 # Road-Segmentation
 
+The purpose of this project is to detect roads using sattelite imagery
 
-
-## intro 
-
+![image](https://user-images.githubusercontent.com/41071502/126909870-c95a95a1-4bcf-417c-a5e6-6d6475f1fce8.png)
 
 
 ## data source 
