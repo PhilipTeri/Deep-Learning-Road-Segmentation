@@ -1,12 +1,10 @@
 # Road-Segmentation
 
-The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation which in this case predicts the classification of each pixel in an image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and not-roads. I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right.
+The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation, which in this case predicts the classification of each pixel in an image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right.
 
 
 
-![img-22](https://user-images.githubusercontent.com/41071502/126910339-945124ee-c3bd-445e-bd46-0e0a5c8d3b1f.png)
 
-![Uploading img-22.png…]()
 
 
 
@@ -14,9 +12,6 @@ The purpose of this project is to detect roads from sattelite imagery.  To do th
 
 -original images
 - cropping images
-
-
-## modelling
 
 ### Network Architecture
 
