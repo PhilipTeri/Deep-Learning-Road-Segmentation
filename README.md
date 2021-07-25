@@ -45,8 +45,11 @@ The Checkpoint callback is required in order to save the best model. The model d
 ![image](https://user-images.githubusercontent.com/41071502/126908786-3da61d75-c938-43d5-a413-09037e70260c.png)
 
 
-Custom Callback 
+#### Custom Callback 
 
+I made a custom callback using tf.keras.callbacks.Callback using the function on_epoch_end. At the end of each epoch 
+
+![image](https://user-images.githubusercontent.com/41071502/126909059-e85fc94e-2e78-4998-996b-670c34311ff2.png)
 
 
 
