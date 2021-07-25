@@ -34,6 +34,9 @@ The original dataset was 1500 x 1500 pixel images. I needed to make the inputs 1
 
 I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this was limited by the ammount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. 
 
+### Optimizer - adam
+### los - binary cross entropy
+
 ### Callbacks
 #### Early stopping
 
