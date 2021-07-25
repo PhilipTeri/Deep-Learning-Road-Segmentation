@@ -20,9 +20,8 @@ I used the Massachusetts Roads Dataset to train the model and below is an exampl
 U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation.
 Two types of images are required to run the U-net architecture. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. 
 
-#### Contraction
+![image](https://user-images.githubusercontent.com/41071502/126914361-707cdd0e-fdf7-419a-9bd2-063802ce3531.png)
 
-#### Expansion
 
 ## Data Cleaning
 
