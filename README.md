@@ -49,7 +49,7 @@ I made a custom callback using the on_epoch_end function tf.keras.callbacks.Call
 
 ## Results
 
-I set aside 30 images that were not used in the model, so I could see how well the model performed on images it has never seen before. Some of the images performed very well and others performed poorly, below are a few examples of both.
+I set aside 30 images that were not used in the model, so I could see how well the model performed on images it has never seen before. The model performed very well some images and very poorly on others, below are a few examples of both. The results will likely improve by adding more training images. 
 
 ### Good Results
 
