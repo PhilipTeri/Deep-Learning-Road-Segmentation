@@ -19,7 +19,7 @@
 
 ### Network Architecture
 
-![image](https://user-images.githubusercontent.com/41071502/126834385-1d22b434-2283-452e-9c66-88925a0d69fc.png)
+![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126906708-b517cc27-23da-4ada-8f82-a19308893ed3.gif)
 
 ### Model
 
