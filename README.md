@@ -6,7 +6,7 @@ The purpose of this project is to detect roads from sattelite imagery. To do thi
 
 ## Data 
 
-[Data Set](https://www.kaggle.com/insaff/massachusetts-roads-dataset)
+[Massachusetts Roads](https://www.kaggle.com/insaff/massachusetts-roads-dataset)
 
 I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right. The dataset contained around 800 classified mask images which corresponded to a satellite image with the same image id. The images in this dataset are 1500 x 1500 pixels.
 
