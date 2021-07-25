@@ -30,6 +30,9 @@ Check point
 
 Custom Callback that prints 10 images with the accuracy
 
+![image](https://user-images.githubusercontent.com/41071502/126905144-55e4f47d-e7ad-4416-965e-53a1a77296f6.png)
+
+
 
 ## Results
 
