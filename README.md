@@ -32,8 +32,15 @@ The early stopping callback monitors the val_loss of the training set, a trigger
 
 ![loss graph](https://user-images.githubusercontent.com/41071502/126908359-d1cd6bc6-5b16-4d69-87d4-575e46373026.png)
 
+#### Check point
+The Checkpoint callback is
 
-Check point
+Epoch 100
+![image](https://user-images.githubusercontent.com/41071502/126908609-ca79dde2-152b-4eff-9f74-3b81d13fc7cb.png)
+
+Best Score
+![image](https://user-images.githubusercontent.com/41071502/126908625-ab5236a7-a7d1-413d-8a94-428788392fb8.png)
+
 
 Custom Callback 
 
