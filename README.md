@@ -14,7 +14,11 @@ U-net is a convolutional neural network that was designed originally for biomedi
 
 ## Pre Processing
 
-The model is set up to run on images 
+The original dataset was 1500 x 1500 pixel images. I needed to make the inputs 128 x 128 to run the model. Originally I took the inputs and resized them on the fly, however, this took a lot of time, so I took multiple 128 x 128 cropped sections of the original image. Some of the original images had white spaces around the edges, so I deleted all of these. The issue now was the there were mask layers that did not have a matching pair, so I made a new dataframe and checked that each input image had a corresponding mask image. 
+
+## Modelling
+
+The outputs from this model are a result of using 1350 training images adn 150 images for validation. The batch size I used is 275, this was limited by the ammount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. 
 
 ### Callbacks
 #### Early stopping
@@ -44,6 +48,21 @@ I made a custom callback using the on_epoch_end function tf.keras.callbacks.Call
 
 
 ## Results
+
+I set aside 30 images that were not used in the model, so I could see how well the model performed on images it has never seen before. Some of the images performed very well and others performed poorly, below are a few examples of both.
+
+### Good Resuls
+![image](https://user-images.githubusercontent.com/41071502/126912791-98ac45aa-ed58-44e2-abc7-f1efd4529ac4.png)
+![image](https://user-images.githubusercontent.com/41071502/126912793-d3d33305-97dc-4edd-88cd-87a081d3bef7.png)
+![image](https://user-images.githubusercontent.com/41071502/126912795-124423d3-eeb5-42dd-8fd9-53756878e1e6.png)
+
+
+### Bad Results 
+
+![image](https://user-images.githubusercontent.com/41071502/126912803-02ed8c85-def3-4f39-bc74-092f8f746e99.png)
+![image](https://user-images.githubusercontent.com/41071502/126912808-dd9dfb23-30db-42d0-b1e3-3643f7680bc5.png)
+![image](https://user-images.githubusercontent.com/41071502/126912817-26dc308b-c4d9-4e3c-9758-a3ce7f8858db.png)
+
 
 ## Future Changes
 
