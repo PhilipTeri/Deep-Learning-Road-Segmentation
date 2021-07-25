@@ -60,12 +60,12 @@ Another improvement to the model will be increasing the batch size, I was limite
 
 ## References
 
-### Massachusetts Roads Dataset - https://www.kaggle.com/insaff/massachusetts-roads-dataset
+#### Massachusetts Roads Dataset - https://www.kaggle.com/insaff/massachusetts-roads-dataset
 
-### Biomedical Image Segmentation Example - 
+#### Biomedical Image Segmentation Example - 
 https://www.kaggle.com/vbookshelf/simple-cell-segmentation-with-keras-and-u-net
 
-### U-Net Architecture Example -
+#### U-Net Architecture Example -
 https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277
 
 
