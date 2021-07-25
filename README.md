@@ -1,4 +1,4 @@
-# Deep Learning Road-Segmentation 
+# Deep Learning Road Segmentation 
 
 ![combined](https://user-images.githubusercontent.com/41071502/126913371-bc3b2a3b-90bf-48bf-b4e9-e082cfd46e76.PNG)
 
