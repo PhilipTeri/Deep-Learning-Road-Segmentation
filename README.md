@@ -41,7 +41,7 @@ Epoch 100
 
 Best Score
 
-![image](https://user-images.githubusercontent.com/41071502/126908625-ab5236a7-a7d1-413d-8a94-428788392fb8.png)
+![image](https://user-images.githubusercontent.com/41071502/126908786-3da61d75-c938-43d5-a413-09037e70260c.png)
 
 
 Custom Callback 
