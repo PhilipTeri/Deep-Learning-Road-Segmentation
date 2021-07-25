@@ -61,6 +61,8 @@ One major change that will improve the model is increasing the number of images 
 
 Another improvement to the model will be increasing the batch size, I was limited to around 250 for my batch size because of ram limitations.
 
+Lastly I want to run this model on a larger image to see the results for a larger region. Since the model is limited to a size of 128 pixels I plan on using patchify to segment the larger image into 128 x 128 images and then using unpatchify to stitch them back together.
+
 ## References
 
 #### Massachusetts Roads Dataset - https://www.kaggle.com/insaff/massachusetts-roads-dataset
