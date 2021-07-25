@@ -37,6 +37,8 @@ Loss - binary_crossentropy
 
 Metrics - Accuracy
 
+Activation Function - ReLU (Rectified Linear Unit)
+
 #### Early stopping
 
 The early stopping callback monitors the val_loss of the training set, a trigger can be set to stop the model when a certain number of epochs have passed without improvement in the val_loss. This stops the model when it begins to overfit the dataset. Below is a gif showing the progression of the model outputs. Without the early stopping callback you can see that the model begins to overfit at the end. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
