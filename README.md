@@ -29,7 +29,11 @@ The original dataset was 1500 x 1500-pixel images. I needed to make the inputs 1
 
 ## Modelling
 
-I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this was limited by the amount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. The model uses the pair of satellite images with the classified masks to make a prediction on new images. The optimizer I used for this model is adam, and the loss function is binary cross entropy. I also used three callbacks which are described below.
+I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this was limited by the amount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. The model uses the pair of satellite images with the classified masks to make a prediction on new images. 
+
+Optimizer - adam
+Loss - binary cross entropy 
+Metrics - Accuracy
 
 #### Early stopping
 
