@@ -26,11 +26,15 @@
 ### Callbacks
 Early stopping
 
+![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
+![image](https://user-images.githubusercontent.com/41071502/126908304-38cbb7ee-b7e3-42e3-ae5c-e8734c2be0d9.png)
+
+
 Check point
 
 Custom Callback 
 
-![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
+
 
 
 ## Results
