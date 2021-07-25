@@ -52,10 +52,10 @@ I made a custom callback using the on_epoch_end function tf.keras.callbacks.Call
 I set aside 30 images that were not used in the model, so I could see how well the model performed on images it has never seen before. Some of the images performed very well and others performed poorly, below are a few examples of both.
 
 ### Good Results
-![image](https://user-images.githubusercontent.com/41071502/126912791-98ac45aa-ed58-44e2-abc7-f1efd4529ac4.png)
-![image](https://user-images.githubusercontent.com/41071502/126912793-d3d33305-97dc-4edd-88cd-87a081d3bef7.png)
-![image](https://user-images.githubusercontent.com/41071502/126912795-124423d3-eeb5-42dd-8fd9-53756878e1e6.png)
 
+<img src="https://user-images.githubusercontent.com/41071502/126912791-98ac45aa-ed58-44e2-abc7-f1efd4529ac4.png" width="550" height="100">
+<img src="https://user-images.githubusercontent.com/41071502/126912793-d3d33305-97dc-4edd-88cd-87a081d3bef7.png" width="550" height="100">
+<img src="https://user-images.githubusercontent.com/41071502/126912795-124423d3-eeb5-42dd-8fd9-53756878e1e6.png" width="550" height="100">
 
 ### Bad Results 
 
