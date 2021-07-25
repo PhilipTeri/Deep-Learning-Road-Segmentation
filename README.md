@@ -2,7 +2,7 @@
 
 ![combined](https://user-images.githubusercontent.com/41071502/126913371-bc3b2a3b-90bf-48bf-b4e9-e082cfd46e76.PNG)
 
-The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation, which in this case predicts the classification of each pixel in an image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. 
+The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation, which in this case predicts the classification of each pixel in a satellite image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. 
 
 ## Data 
 
