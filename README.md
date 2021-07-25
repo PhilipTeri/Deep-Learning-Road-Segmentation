@@ -19,7 +19,7 @@
 
 ### Network Architecture
 
-![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126906708-b517cc27-23da-4ada-8f82-a19308893ed3.gif)
+
 
 ### Model
 
@@ -28,10 +28,9 @@ Early stopping
 
 Check point
 
-Custom Callback that prints 10 images with the accuracy
+Custom Callback 
 
-![image](https://user-images.githubusercontent.com/41071502/126905144-55e4f47d-e7ad-4416-965e-53a1a77296f6.png)
-
+![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
 
 
 ## Results
