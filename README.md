@@ -23,9 +23,12 @@ U-net is a convolutional neural network that was designed originally for biomedi
 
 #### Expansion
 
-## Pre Processing
+## Data Cleaning
 
 The original dataset was 1500 x 1500 pixel images. I needed to make the inputs 128 x 128 to run the model. Originally I took the inputs and resized them on the fly, however, this took a lot of time, so I took multiple 128 x 128 cropped sections of the original image. Some of the original images had white spaces around the edges, so I deleted all of these. The issue now was the there were mask layers that did not have a matching pair, so I made a new dataframe and checked that each input image had a corresponding mask image. 
+
+![image](https://user-images.githubusercontent.com/41071502/126913653-e0855b6f-1a50-4c71-a2cb-084e213b1f93.png)
+
 
 ## Modelling
 
