@@ -20,9 +20,6 @@ I used the Massachusetts Roads Dataset to train the model and below is an exampl
 U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation.
 Two types of images are required to run the U-net architecture. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. 
 
-![image](https://user-images.githubusercontent.com/41071502/126914361-707cdd0e-fdf7-419a-9bd2-063802ce3531.png)
-
-
 ## Data Cleaning
 
 The original dataset was 1500 x 1500 pixel images. I needed to make the inputs 128 x 128 to run the model. Originally I took the inputs and resized them on the fly, however, this took a lot of time, so I took multiple 128 x 128 cropped sections of the original image. Some of the original images had white spaces around the edges, so I deleted all of these. The issue now was the there were mask layers that did not have a matching pair, so I made a new dataframe and checked that each input image had a corresponding mask image. 
@@ -34,8 +31,8 @@ The original dataset was 1500 x 1500 pixel images. I needed to make the inputs 1
 
 I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this was limited by the ammount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. 
 
-### Optimizer - adam
-### los - binary cross entropy
+#### Optimizer - adam
+#### loss - binary cross entropy
 
 ### Callbacks
 #### Early stopping
