@@ -19,7 +19,7 @@ I used the Massachusetts Roads Dataset to train the model and below is an exampl
 
 U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation. 
 
-#### Contration
+#### Contraction
 
 #### Expansion
 
