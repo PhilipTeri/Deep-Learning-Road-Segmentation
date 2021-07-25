@@ -3,17 +3,18 @@
 The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation, which in this case predicts the classification of each pixel in an image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right.
 
 
-## Pre Processing
-
-The model was set up to run images that 
-
 ### Network Architecture
 
 #### U-net
 
 <img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="550" height="350">
 
+U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation. The architecture consists of two main parts, the left side of the U is the contraction and the right side is the expansion. 
 
+
+## Pre Processing
+
+The model is set up to run on images 
 
 ### Callbacks
 #### Early stopping
