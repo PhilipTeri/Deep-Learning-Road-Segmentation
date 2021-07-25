@@ -28,7 +28,7 @@ Early stopping
 
 ![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
 
-![image](https://user-images.githubusercontent.com/41071502/126908304-38cbb7ee-b7e3-42e3-ae5c-e8734c2be0d9.png)
+![loss graph](https://user-images.githubusercontent.com/41071502/126908359-d1cd6bc6-5b16-4d69-87d4-575e46373026.png)
 
 
 Check point
