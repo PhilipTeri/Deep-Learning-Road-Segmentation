@@ -22,7 +22,7 @@
 
 #### U-net
 
-<img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="200" height="100">
 
 
 
