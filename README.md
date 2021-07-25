@@ -7,8 +7,8 @@
 
 
 ## data source 
--link image source
-- talk about how I can make my own data
+
+
 
 ## pre processing
 
@@ -52,16 +52,20 @@ I made a custom callback using the on_epoch_end function tf.keras.callbacks.Call
 
 ## Results
 
+## Future Changes
 
+One major change that will improve the model is increasing the number of images in the data set. I originally cropped the 128 x 128 images from a 1500 x 1500 images, but another way to quickly increase the number of images is using image augmentation. Simple image augmenatations such as rotating or flipping an image can create multiple new images from one initial image. Tensorflow does this on the fly, so it is not necessary to save the new images. However, this will increase processing time when running the model. 
 
-## Future changes
-- data augmentation
-- bigger batch size, more ram
+Another improvement to the model will be increasing the batch size, I was limited to around 250 for my batch size because of ram limitations.
 
 ## References
 
-Biomedical Example - 
+### Massachusetts Roads Dataset - https://www.kaggle.com/insaff/massachusetts-roads-dataset
+
+### Biomedical Image Segmentation Example - 
 https://www.kaggle.com/vbookshelf/simple-cell-segmentation-with-keras-and-u-net
 
-U-Net architecture Example -
+### U-Net Architecture Example -
 https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277
+
+
