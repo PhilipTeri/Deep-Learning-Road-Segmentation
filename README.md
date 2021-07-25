@@ -61,7 +61,7 @@ The Checkpoint callback is required in order to save the best model. The model d
 
 #### Custom Callback 
 
-I made a custom callback using the on_epoch_end function tf.keras.callbacks.Callback. At the end of each epoch the results of the model are displayed, this allowed me to monitor the models performance visually while it was running. This callback also saves an image of the results after each epoch, which I then used to create a gif of the models progress.
+I made a custom callback using the on_epoch_end function in tf.keras.callbacks. At the end of each epoch the results of the model are displayed using a test image, this allowed me to monitor the model's performance visually while it was still running. This callback also saves an image of the results after each epoch, which I then used to create a gif of the models progress.
 
 
 ## Results
