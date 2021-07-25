@@ -76,7 +76,7 @@ I set aside 30 images that were not used in the model, so I could see how well t
 <img src="https://user-images.githubusercontent.com/41071502/126912808-dd9dfb23-30db-42d0-b1e3-3643f7680bc5.png" width="430" height="150">
 <img src="https://user-images.githubusercontent.com/41071502/126912817-26dc308b-c4d9-4e3c-9758-a3ce7f8858db.png" width="430" height="150">
 
-## Future Changes
+## Future Improvements
 
 One major change that will improve the model is increasing the number of images in the data set. I originally cropped the 128 x 128 images from a 1500 x 1500 images, but another way to quickly increase the number of images is using image augmentation. Simple image augmenatations such as rotating or flipping an image can create multiple new images from one initial image. Tensorflow does this on the fly, so it is not necessary to save the new images. However, this will increase processing time when running the model. 
 
