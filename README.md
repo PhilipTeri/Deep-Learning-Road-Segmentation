@@ -89,10 +89,10 @@ Lastly I want to run this model on a larger image to see the results for a large
 #### Massachusetts Roads Dataset - 
 https://www.kaggle.com/insaff/massachusetts-roads-dataset
 
-#### Biomedical Image Segmentation Example - 
+#### Simple Cell Segmentation with Keras and U-Net- 
 https://www.kaggle.com/vbookshelf/simple-cell-segmentation-with-keras-and-u-net
 
-#### U-Net Architecture Example -
+#### Keras U-Net starter -
 https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277
 
 
