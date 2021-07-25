@@ -1,9 +1,11 @@
 # Road-Segmentation
 
-The purpose of this project is to detect roads from sattelite imagery. To do this I will use Tensorflow and Keras to create a convolutional neural network. The model is trained using pairs of sattelite images and classified mask layers. I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right.
+The purpose of this project is to detect roads from sattelite imagery.  To do this I used semantic segmentation which in this case predicts the classification of each pixel in an image as a road or not a road. Two types of images are required to do this. One is the original satteltite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and not-roads. I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right.
 
-![image](https://user-images.githubusercontent.com/41071502/126909870-c95a95a1-4bcf-417c-a5e6-6d6475f1fce8.png)
+![img-28](https://user-images.githubusercontent.com/41071502/126910297-d9219e02-362e-4700-9209-6adca1070b02.png)
 
+
+![img-28](https://user-images.githubusercontent.com/41071502/126910305-c7b96904-2903-40b0-9449-65979d4de416.png)
 
 
 
