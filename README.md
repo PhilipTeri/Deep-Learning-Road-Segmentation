@@ -17,8 +17,11 @@ I used the Massachusetts Roads Dataset to train the model and below is an exampl
 
 <img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="550" height="350">
 
-U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation. The architecture consists of two main parts, the left side of the U is the contraction and the right side is the expansion. 
+U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with sattelite image segmentation. 
 
+#### Contration
+
+#### Expansion
 
 ## Pre Processing
 
