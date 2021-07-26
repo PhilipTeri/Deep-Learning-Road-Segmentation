@@ -2,7 +2,7 @@
 
 ![combined](https://user-images.githubusercontent.com/41071502/126913371-bc3b2a3b-90bf-48bf-b4e9-e082cfd46e76.PNG)
 
-The purpose of this project is to detect roads from satellite imagery. To do this I used semantic segmentation used, which in this case predicts the classification of each pixel in a satellite image as a road or not a road. This can be applied to any type of land classification. Features can be automatically detected and mapped using this type of deep learning model.
+The purpose of this project is to detect roads from satellite imagery. To do this I used semantic segmentation, which in this case predicts the classification of each pixel in a satellite image as a road or not a road. This can be applied to any type of land classification. Features can be automatically detected and mapped using this type of deep learning model.
 
 ## Data 
 
