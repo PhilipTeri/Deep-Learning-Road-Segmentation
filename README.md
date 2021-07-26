@@ -45,9 +45,12 @@ The early stopping callback monitors the val_loss of the training set.  A trigge
 
 
 
-<img src="![cropped](https://user-images.githubusercontent.com/41071502/127063765-ebf34075-55c4-444e-a173-79e3e68101a3.gif)" width="150" height="150">
+
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/41071502/127062829-32969ceb-f883-453b-b648-b29cf88814cf.gif)
+
+![cropped](https://user-images.githubusercontent.com/41071502/127063835-e40f4026-b2a5-4a4c-b2b7-873f36d43c0e.gif)
+
 
 
 #### Check point Callback
