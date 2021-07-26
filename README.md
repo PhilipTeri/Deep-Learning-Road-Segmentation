@@ -45,8 +45,8 @@ The early stopping callback monitors the val_loss of the training set.  A trigge
 
 ![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/41071502/127062829-32969ceb-f883-453b-b648-b29cf88814cf.gif)
 
-![loss graph](https://user-images.githubusercontent.com/41071502/126908359-d1cd6bc6-5b16-4d69-87d4-575e46373026.png)
 
 #### Check point Callback
 The Checkpoint callback is required in order to save the best model. The model does not save the last epoch it saves the epoch with the best value. To confirm this, I compared the results of the last epoch with the results after applying the model to the test set. The 100th epoch is overfit and missing a large portion of the road while the best result looks more like the true mask.
