@@ -8,7 +8,7 @@ The purpose of this project is to detect roads from satellite imagery. To do thi
 
 [Massachusetts Roads](https://www.kaggle.com/insaff/massachusetts-roads-dataset)
 
-I used the Massachusetts Roads Dataset to train the model. The dataset contains around 800 classified mask images which corresponds to a satellite image with the same Id.
+I used the Massachusetts Roads Dataset to train the model. The dataset contains around 800 classified mask images which corresponds to a matching satellite image with the same Id.
 
 
 ## Network Architecture
