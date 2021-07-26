@@ -15,7 +15,7 @@ I used the Massachusetts Roads Dataset to train the model. The dataset contains 
 
 #### U-net
 
-<img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="550" height="350">
+<img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="550" height="300">
 
 U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with satellite image segmentation as well.
 Two types of images are required to run the U-net architecture. One is the original satellite imagery and the second is a classified image (mask). The mask layer can contain multiple classification for different land uses, but in this project there are only 2 classifications, roads and everything else that is not a road. 
