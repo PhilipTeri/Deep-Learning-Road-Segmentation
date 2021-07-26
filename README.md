@@ -2,13 +2,13 @@
 
 ![combined](https://user-images.githubusercontent.com/41071502/126913371-bc3b2a3b-90bf-48bf-b4e9-e082cfd46e76.PNG)
 
-The purpose of this project is to detect roads from satellite imagery. To do this semantic segmentation is used, which in this case predicts the classification of each pixel in a satellite image as a road or not a road. This can be applied to any type of land classification. Features can be automatically detected and mapped using this type of deep learning model.
+The purpose of this project is to detect roads from satellite imagery. To do this I used semantic segmentation used, which in this case predicts the classification of each pixel in a satellite image as a road or not a road. This can be applied to any type of land classification. Features can be automatically detected and mapped using this type of deep learning model.
 
 ## Data 
 
 [Massachusetts Roads](https://www.kaggle.com/insaff/massachusetts-roads-dataset)
 
-I used the Massachusetts Roads Dataset to train the model and below is an example inputs on the left and the resulting mask layer on the right. The dataset contained around 800 classified mask images which corresponded to a satellite image with the same image id. The images in this dataset are 1500 x 1500 pixels.
+I used the Massachusetts Roads Dataset to train the model. The dataset contains around 800 classified mask images which corresponds to a satellite image with the same Id.
 
 
 ## Network Architecture
@@ -17,19 +17,19 @@ I used the Massachusetts Roads Dataset to train the model and below is an exampl
 
 <img src="https://user-images.githubusercontent.com/41071502/126908484-b9609c33-9f56-4f72-ab10-97cb0a311151.png" width="550" height="350">
 
-U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with satellite image segmentation.
-Two types of images are required to run the U-net architecture. One is the original satellite imagery and the second is a classified image (mask). This mask layer can contain multiple classification for different land uses, but in this there are only 2 classifications, roads and everything else that is not a road. 
+U-net is a convolutional neural network that was designed originally for biomedical image segmentation. However, I learned that it worked well with satellite image segmentation as well.
+Two types of images are required to run the U-net architecture. One is the original satellite imagery and the second is a classified image (mask). The mask layer can contain multiple classification for different land uses, but in this project there are only 2 classifications, roads and everything else that is not a road. 
 
 ## Data Cleaning
 
-The original dataset was 1500 x 1500-pixel images. I needed to make the inputs 128 x 128 to run the model. Originally, I took the inputs and resized them on the fly, however, this took a lot of time, so I took multiple 128 x 128 cropped sections of the original image. Some of the original images had white spaces around the edges, so I deleted all of these. The issue now was the there were mask layers that did not have a matching pair, so I made a new data frame and checked that each input image had a corresponding mask image. 
+The original image size of the dataset is 1500 x 1500-pixels. Originally, I took the inputs and resized them on the fly, however, this added a lot of processing time. As an alternative to resizing, I cropped 128 x 128 images from the original images and masks. Some of the original images had white spaces around the edges, so I removed all of these. This caused a new issue because now some of the masks would not have a matching pair. I made a new data frame to fix this and checked that each input image had a corresponding mask image. 
 
 ![image](https://user-images.githubusercontent.com/41071502/126913653-e0855b6f-1a50-4c71-a2cb-084e213b1f93.png)
 
 
 ## Modelling
 
-I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this was limited by the amount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road. The model uses the pair of satellite images with the classified masks to make a prediction on new images. 
+I used 1350 training images and 150 images for validation to run the model. The batch size I used is 275, this is limited by the amount of ram I have. The prediction threshold is set to 50%, meaning that the model will only classify a pixel as a road if it is over 50% confident that the pixel value represents a road.  The model uses the pair of satellite images and classified masks to make a predicted mask layer.
 
 Optimizer - Adam
 
@@ -41,7 +41,7 @@ Activation Function - ReLU (Rectified Linear Unit)
 
 #### Early stopping Callback
 
-The early stopping callback monitors the val_loss of the training set, a trigger can be set to stop the model when a certain number of epochs have passed without improvement in the val_loss. This stops the model when it begins to overfit the dataset. Below is a gif showing the progression of the model outputs. Without the early stopping callback you can see that the model begins to overfit at the end. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
+The early stopping callback monitors the val_loss of the training set.  A trigger can be set to stop the model when a certain number of epochs have passed without improvement in the val_loss. This stops the model when it begins to overfit the dataset. Below is a gif showing the progression of the model outputs. Without the early stopping callback, you can see that the model begins to overfit. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
 
 ![first_gif_image_id_10](https://user-images.githubusercontent.com/41071502/126907247-6dd71604-4d22-4de3-8bbf-78b8ecb79959.gif)
 
@@ -49,7 +49,7 @@ The early stopping callback monitors the val_loss of the training set, a trigger
 ![loss graph](https://user-images.githubusercontent.com/41071502/126908359-d1cd6bc6-5b16-4d69-87d4-575e46373026.png)
 
 #### Check point Callback
-The Checkpoint callback is required in order to save the best model. The model does not save the last epoch is saves the epoch with the best value. To confirm this, I compared the results of the last epoch with the results after applying the model to the test set. The 100th epoch is overfit and missing a large portion of the road while the best results output looks more like the true mask. 
+The Checkpoint callback is required in order to save the best model. The model does not save the last epoch it saves the epoch with the best value. To confirm this, I compared the results of the last epoch with the results after applying the model to the test set. The 100th epoch is overfit and missing a large portion of the road while the best result looks more like the true mask.
 
 ##### Final Epoch
 
@@ -62,7 +62,7 @@ The Checkpoint callback is required in order to save the best model. The model d
 
 #### Custom Callback 
 
-I made a custom callback using the on_epoch_end function in tf.keras.callbacks. At the end of each epoch the results of the model are displayed using a test image, this allowed me to monitor the model's performance visually while it was still running. This callback also saves an image of the results after each epoch, which I then used to create a gif of the model’s progress.
+I made a custom callback using the on_epoch_end function in tf.keras.callbacks. At the end of each epoch the results of the model are displayed using a test image, this allows me to monitor the model's performance visually while it is still running. This callback also saves an image of the results after each epoch, this is useful to see the models progression over time.
 
 
 ## Results
@@ -82,9 +82,9 @@ I set aside 30 images that were not used in the model, so I could see how well t
 
 ## Future Improvements
 
-One major change that will improve the model is increasing the number of images in the data set. I originally cropped the 128 x 128 images from a 1500 x 1500 images, but another way to quickly increase the number of images is using image augmentation. Simple image augmentations such as rotating or flipping an image can create multiple new images from one initial image. TensorFlow does this on the fly, so it is not necessary to save the new images. However, this will increase processing time when running the model. 
+One major improvement for the future the is increasing the number of images in the data set. One way to quickly increase the number of images is using image augmentation. Simple image augmentations such as rotating or flipping an image can create multiple new images from one initial image. TensorFlow does this on the fly, so it is not necessary to save the new images. However, this will increase processing time.
 
-Another improvement to the model will be increasing the batch size, I was limited to around 250 for my batch size because of ram limitations.
+Another improvement to the model will be increasing the batch size, I was limited to around 250 for my batch size because of ram limitations.  I need to either increase the amount of ram I have or use distributed training and run the model on multiple computers at the same time.
 
 Lastly, I want to run this model on a larger image to see the results for a larger region. Since the model is limited to a size of 128 pixels, I plan on using patchify to segment the larger image into 128 x 128 images and then using unpatchify to stitch them back together.
 
