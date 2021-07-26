@@ -39,7 +39,7 @@ Metrics - Accuracy
 
 Activation Function - ReLU (Rectified Linear Unit)
 
-#### Early stopping
+#### Early stopping Callback
 
 The early stopping callback monitors the val_loss of the training set, a trigger can be set to stop the model when a certain number of epochs have passed without improvement in the val_loss. This stops the model when it begins to overfit the dataset. Below is a gif showing the progression of the model outputs. Without the early stopping callback you can see that the model begins to overfit at the end. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
 
@@ -48,7 +48,7 @@ The early stopping callback monitors the val_loss of the training set, a trigger
 
 ![loss graph](https://user-images.githubusercontent.com/41071502/126908359-d1cd6bc6-5b16-4d69-87d4-575e46373026.png)
 
-#### Check point
+#### Check point Callback
 The Checkpoint callback is required in order to save the best model. The model does not save the last epoch is saves the epoch with the best value. To confirm this, I compared the results of the last epoch with the results after applying the model to the test set. The 100th epoch is overfit and missing a large portion of the road while the best results output looks more like the true mask. 
 
 ##### Final Epoch
