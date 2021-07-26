@@ -43,7 +43,7 @@ Activation Function - ReLU (Rectified Linear Unit)
 
 The early stopping callback monitors the val_loss of the training set.  A trigger can be set to stop the model when a certain number of epochs have passed without improvement in the val_loss. This stops the model when it begins to overfit the dataset. Below is a gif showing the progression of the model outputs. Without the early stopping callback, you can see that the model begins to overfit. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
 
-<img src="https://user-images.githubusercontent.com/41071502/127065938-1fdabb13-0034-401c-8f3e-c197cec78205.png" width="350" height="250">
+<img src="https://user-images.githubusercontent.com/41071502/127065938-1fdabb13-0034-401c-8f3e-c197cec78205.png" width="500" height="150">
 
 <img src="https://user-images.githubusercontent.com/41071502/127062829-32969ceb-f883-453b-b648-b29cf88814cf.gif" width="350" height="250"><img src="https://user-images.githubusercontent.com/41071502/127065567-65c5dc74-c03c-428e-b17f-735d8ef764e2.gif" width="150" height="150">
 
