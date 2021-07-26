@@ -45,7 +45,7 @@ The early stopping callback monitors the val_loss of the training set.  A trigge
 
 Below is the final output for one of the test images, along with a gif showing the loss value for each epoch and the model prediction for each epoch. Without the early stopping callback, you can see that the model begins to overfit. The deviation in loss between the training and test samples also shows that the model is overfitting the longer it runs.
 
-<img src="https://user-images.githubusercontent.com/41071502/127065938-1fdabb13-0034-401c-8f3e-c197cec78205.png" width="500" height="200">
+<img src="https://user-images.githubusercontent.com/41071502/127065938-1fdabb13-0034-401c-8f3e-c197cec78205.png" width="500" height="180">
 
 <img src="https://user-images.githubusercontent.com/41071502/127062829-32969ceb-f883-453b-b648-b29cf88814cf.gif" width="350" height="250"><img src="https://user-images.githubusercontent.com/41071502/127065567-65c5dc74-c03c-428e-b17f-735d8ef764e2.gif" width="150" height="150">
 
