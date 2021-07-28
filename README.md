@@ -55,11 +55,11 @@ The Checkpoint callback is required in order to save the best model. The model d
 
 ##### Final Epoch
 
-![image](https://user-images.githubusercontent.com/41071502/126908609-ca79dde2-152b-4eff-9f74-3b81d13fc7cb.png)
+![image](https://user-images.githubusercontent.com/41071502/127358067-d5270c6b-24f0-4114-b75b-5c02a8e200d7.png)
 
 ##### Best Scoring Epoch
 
-![image](https://user-images.githubusercontent.com/41071502/126908786-3da61d75-c938-43d5-a413-09037e70260c.png)
+![image](https://user-images.githubusercontent.com/41071502/127358012-a6a45156-5ef5-473b-88ca-2ae64a025447.png)
 
 
 #### Custom Callback 
